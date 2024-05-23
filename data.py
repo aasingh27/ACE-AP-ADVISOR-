@@ -17,5 +17,4 @@ for exam in results_exam_name:
     clean_name = exam.lstrip("<li>").rstrip("</li>")
     exams.append(clean_name)
 
-for name in exams:
-    print(name) 
+ 
