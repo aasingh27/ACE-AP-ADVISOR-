@@ -3,8 +3,18 @@ body{
 }
 
 h1{
-
     font-family: "consolas", sans-serif;
+    margin: auto ;
+    max-width: 700px;
+    font-size: 40px;
+    
+    height: 58vh ;
+    position: absolute;
+    bottom: 0;
+    
+    padding-left: 50px;
+
+
 }
 
 p{
