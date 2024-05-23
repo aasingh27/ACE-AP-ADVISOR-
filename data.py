@@ -1,4 +1,5 @@
 import requests
+from googlesearch import search
 from bs4 import BeautifulSoup
 
 url = "https://blog.prepscholar.com/list-of-ap-exams"
@@ -17,4 +18,7 @@ for exam in results_exam_name:
     clean_name = exam.lstrip("<li>").rstrip("</li>")
     exams.append(clean_name)
 
- 
+search_results = search("AP" + exams[0] + " study resources", advanced=True)
+
+for result in search_results:
+    print(result.url)
